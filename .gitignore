@@ -1,0 +1,4 @@
+# Ignore Windows Zone Identifier junk files
+*:[Zz]one.Identifier
+*.Zone.Identifier
+Zone.Identifier

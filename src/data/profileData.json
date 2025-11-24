@@ -1,0 +1,398 @@
+{
+  "hero": {
+    "name": "Kalathur Chenchu Kishore Kumar",
+    "subheading": "Computer Vision & GenAI Engineer",
+    "tagline": "I design robust, production-ready Vision and Generative AI systems that bridge research and deployment.",
+    "roles": [
+      "Computer Vision & Video Analytics Engineer",
+      "Generative AI & Multimodal Systems Engineer",
+      "LLM & Agentic Workflow Developer",
+      "MLOps & Edge Deployment Practitioner"
+    ],
+    "location": "Bengaluru / Chennai, India"
+  },
+  "about": {
+    "headline": "About Me",
+    "short_paragraphs": [
+      "I am a Computer Vision & Machine Learning Engineer with end-to-end experience: from research prototypes in NeRF, diffusion models and incremental learning to production deployments on edge hardware and enterprise GenAI platforms.",
+      "My recent work focuses on building multimodal systems that combine 2D/3D vision, language models, and agentic workflows. I enjoy turning ambiguous problem statements into measurable, data-driven solutions with clear success metrics.",
+      "Beyond engineering, I actively mentor students and early-career professionals, maintain a strong technical presence on LinkedIn, and continuously explore new ideas at the intersection of optimization, vision, and generative modeling."
+    ],
+    "details": [
+      [
+        "Name",
+        "Kalathur Chenchu Kishore Kumar"
+      ],
+      [
+        "Current Role",
+        "Computer Vision & ML Engineer \u2022 GenAI & LLMs"
+      ],
+      [
+        "Email",
+        "kumarkishorekalathur@gmail.com"
+      ],
+      [
+        "Phone",
+        "+91-6301883597"
+      ],
+      [
+        "GitHub",
+        "github.com/kalathurkishore"
+      ],
+      [
+        "Location",
+        "Bengaluru / Chennai, India"
+      ],
+      [
+        "LinkedIn",
+        "linkedin.com/in/kalathurchenchukishorekumar/"
+      ]
+    ]
+  },
+  "experience": [
+    {
+      "company": "Wipro",
+      "role": "Gen AI Developer, Senior Engineer",
+      "period": "Aug 2025 - Present",
+      "location": "Bengaluru, India",
+      "focus": "Enterprise GenAI solutions, agentic workflows, and multimodal automation.",
+      "responsibilities": [
+        "Designing and developing Generative AI applications that combine LLMs, Vision-Language Models, and diffusion models for enterprise use-cases such as document understanding, visual QA and workflow automation.",
+        "Building agentic workflows using LangChain and custom tool abstractions, where LLM agents can orchestrate retrieval, reasoning, and action across internal APIs and knowledge bases.",
+        "Prototyping RAG pipelines and evaluation harnesses to ensure reliability, latency guarantees, and domain-specific factual accuracy.",
+        "Collaborating closely with product and platform teams to productionize PoCs into scalable services with proper observability and safety checks."
+      ],
+      "tech_stack": [
+        "OpenAI / local LLMs",
+        "LangChain",
+        "LlamaIndex",
+        "RAG",
+        "Vector DBs",
+        "Vision-Language Models",
+        "Diffusion Models",
+        "Python",
+        "Docker"
+      ]
+    },
+    {
+      "company": "HCLTech (R&D)",
+      "role": "Computer Vision & ML Engineer, Technical Lead",
+      "period": "Oct 2023 - Aug 2025",
+      "location": "Chennai, India",
+      "focus": "3D reconstruction, unsafe-driving analytics, incremental object detection, and vision-language workflows.",
+      "responsibilities": [
+        "Built a 3D scene reconstruction pipeline using NeRF and COLMAP from monocular camera frames to model indoor environments and support precise in-house equipment installation.",
+        "Explored and implemented Stable Diffusion and ControlNets for facial-landmark guided image generation, enabling controllable face synthesis and editing.",
+        "Developed an unsafe driving alert-monitoring system detecting drowsiness, mobile usage and seatbelt violations; optimized and quantized models with OpenVINO to achieve 83% model size reduction and 60 FPS on edge hardware.",
+        "Designed a method for detecting periodic patterns in semiconductor images using frequency-domain analysis, wavelet decomposition and histogram equalization, achieving proof-of-concept with ~80% IoU.",
+        "Mitigated catastrophic forgetting in incremental object detection via feature- and logit-level knowledge distillation, achieving ~85% mAP on unseen COCO classes, comparable to standard detectors.",
+        "Built a Vision-Language workflow for metadata and measurement extraction from engineering drawings and unstructured tables, using prompt-tuned VLMs to output structured JSON."
+      ],
+      "tech_stack": [
+        "PyTorch",
+        "OpenCV",
+        "NeRF",
+        "COLMAP",
+        "Stable Diffusion",
+        "ControlNet",
+        "OpenVINO",
+        "ONNX",
+        "Knowledge Distillation",
+        "Vision-Language Models",
+        "Signal Processing",
+        "Wavelets",
+        "Python"
+      ]
+    },
+    {
+      "company": "Tata Consultancy Services (TCS)",
+      "role": "ETL Developer, Assistant System Engineer Trainee",
+      "period": "May 2019 - Oct 2019",
+      "location": "Chennai, India",
+      "focus": "Data pipelines and fraud analytics for BFSI.",
+      "responsibilities": [
+        "Developed Informatica workflows and SQL scripts in mainframe environments for a BFSI client, improving policy and claims management.",
+        "Helped improve fraud detection by ~20% and processing efficiency by ~30% via better data flows and validation logic."
+      ],
+      "tech_stack": [
+        "Informatica",
+        "SQL",
+        "Mainframe Systems",
+        "BFSI Domain"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "M.Tech in Artificial Intelligence",
+      "institute": "Indian Institute of Technology, Jodhpur",
+      "period": "Jul 2021 - Jun 2023",
+      "details": [
+        "CGPA: 7.56/10",
+        "Masters thesis focused on smart routing and spatiotemporal modeling using Markov Models and LSTMs.",
+        "Teaching Assistant for Deep Learning, DL-Ops, and Security-related courses."
+      ]
+    },
+    {
+      "degree": "B.Tech in Computer Science and Engineering",
+      "institute": "Sree Vidyanikethan Engineering College, Andhra Pradesh",
+      "period": "Jul 2015 - May 2019",
+      "details": [
+        "CGPA: 8.02/10",
+        "Built a strong foundation in algorithms, data structures, and systems programming."
+      ]
+    }
+  ],
+  "thesis": {
+    "title": "Smart Routing Algorithms for Pickup and Delivery Operations by Enhancing Capacity Utilization",
+    "summary": "A data-driven framework for capacitated vehicle routing with pickup and delivery, integrating driver preferences and spatiotemporal features using Markov Models and LSTMs.",
+    "problem": "Classical vehicle routing often under-utilizes capacity and ignores driver behaviour and time-varying demand patterns, leading to suboptimal fuel and labor usage.",
+    "approach": [
+      "Modeled pickup and delivery operations as a Markov Decision Process with LSTM-based demand forecasting to capture temporal dependencies.",
+      "Proposed heuristic and learning-augmented routing strategies that balance route optimality with practical constraints such as driver preferences and real-world variability."
+    ],
+    "impact": [
+      "Achieved 1.5\u20132x higher serving capacity compared to traditional routing baselines.",
+      "Maintained deviation under 20% from optimal paths while improving cost-effectiveness and reliability.",
+      "Quantified trade-offs between vehicle size, simultaneous pickups/deliveries and number of stops on fleet size and capacity limits."
+    ]
+  },
+  "skills": {
+    "Programming Languages": [
+      "Python (primary)",
+      "C/C++",
+      "Java",
+      "Bash scripting"
+    ],
+    "Core Machine Learning & Deep Learning": [
+      "Supervised & Unsupervised Learning",
+      "Model selection & evaluation",
+      "CNNs & 3D CNNs",
+      "RNNs & LSTMs",
+      "Representation learning"
+    ],
+    "Computer Vision": [
+      "Image & Video Processing",
+      "Object Detection & Tracking",
+      "3D Scene Reconstruction (NeRF, SfM)",
+      "Face & Landmark Processing",
+      "Document & Drawing Understanding",
+      "Frequency & Wavelet-based Analysis"
+    ],
+    "Generative AI & LLMs": [
+      "Diffusion Models (Stable Diffusion, ControlNet)",
+      "Prompt Engineering & Prompt Tuning",
+      "LLMs for Retrieval-Augmented Generation (RAG)",
+      "Vision-Language Models",
+      "Talking Head & Lip Sync Generation",
+      "Multimodal pipelines (text\u2013image\u2013video)"
+    ],
+    "Agentic & Tool-using Systems": [
+      "LangChain agents & tools",
+      "LlamaIndex for knowledge graphs and retrieval",
+      "Custom tool abstractions around REST, SQL and internal services",
+      "Task orchestration, guardrails and evaluation for agent workflows"
+    ],
+    "MLOps / Deployment": [
+      "OpenVINO & ONNX optimization",
+      "Model quantization for edge devices",
+      "Docker-based packaging",
+      "Experiment tracking and reproducible pipelines"
+    ],
+    "Data & Platforms": [
+      "Informatica",
+      "SQL",
+      "Vector databases (conceptual)",
+      "Cloud/virtualization basics",
+      "Linux-based environments"
+    ],
+    "Academics & Extras": [
+      "Advanced Deep Learning",
+      "Computer Vision",
+      "ML-Ops & DL-Ops",
+      "Blockchain & Security",
+      "Cognitive Neuroscience",
+      "Non-linear Programming",
+      "Financial Engineering"
+    ]
+  },
+  "projects": [
+    {
+      "id": "nerf-interior-reconstruction",
+      "title": "NeRF-based 3D Interior Reconstruction",
+      "domain": "3D Computer Vision",
+      "organization": "HCLTech R&D",
+      "role": "Computer Vision Engineer",
+      "period": "2024",
+      "problem": "Need for accurate 3D reconstruction of indoor environments using only monocular RGB footage to support virtual walkthroughs and precise equipment installation.",
+      "approach": [
+        "Built a pipeline combining COLMAP-based Structure-from-Motion for camera pose estimation with NeRF training for continuous 3D scene representation.",
+        "Experimented with different sampling strategies, loss functions and NeRF variants to improve reconstruction for low-texture surfaces like plain walls."
+      ],
+      "impact": [
+        "Enabled high-fidelity 3D reconstructions from simple camera scans without depth sensors.",
+        "Improved reconstruction robustness on challenging indoor scenes via custom regularization and training schedules.",
+        "Reduced training time by ~25% using mixed-precision and scene-aware hyperparameter tuning."
+      ],
+      "techStack": [
+        "PyTorch",
+        "NeRF",
+        "COLMAP",
+        "OpenCV",
+        "Python"
+      ],
+      "tags": [
+        "3D Vision",
+        "NeRF",
+        "Reconstruction"
+      ]
+    },
+    {
+      "id": "controlnet-face-generation",
+      "title": "Face-Landmark Guided Image Generation",
+      "domain": "Generative Computer Vision",
+      "organization": "HCLTech R&D",
+      "role": "GenAI Engineer",
+      "period": "2024",
+      "problem": "Need fine-grained control over face pose and expression while retaining identity in generated or edited facial images.",
+      "approach": [
+        "Used Stable Diffusion with ControlNets conditioned on facial landmarks and depth maps to steer pose and expression.",
+        "Designed evaluation metrics based on landmark distance and LPIPS to quantify identity preservation vs. controllability trade-offs."
+      ],
+      "impact": [
+        "Delivered controllable face generation demos for internal stakeholders, enabling quick what-if variations for visual concepts.",
+        "Provided a reusable pipeline for future face editing and anonymization workflows."
+      ],
+      "techStack": [
+        "Stable Diffusion",
+        "ControlNet",
+        "PyTorch",
+        "CUDA"
+      ],
+      "tags": [
+        "Diffusion Models",
+        "ControlNet",
+        "Face Generation"
+      ]
+    },
+    {
+      "id": "unsafe-driving-detection",
+      "title": "Edge Deployed Unsafe Driving Behaviour Detection",
+      "domain": "Real-time Video Analytics",
+      "organization": "HCLTech R&D",
+      "role": "Technical Lead",
+      "period": "2023 - 2024",
+      "problem": "Detect unsafe driving behaviours (phone usage, drowsiness, no seatbelt) in real-time on constrained edge devices for fleets.",
+      "approach": [
+        "Developed multi-task CNN-based models for detecting multiple unsafe behaviours from driver-facing camera feeds.",
+        "Optimized the model using OpenVINO and quantization for deployment on low-power edge hardware.",
+        "Designed alerting logic that balances sensitivity with alert fatigue by combining temporal smoothing and multi-label thresholds."
+      ],
+      "impact": [
+        "Achieved 83% reduction in model size while maintaining accuracy and reaching 60 FPS on edge devices.",
+        "Improved driver safety insights and built a foundation for fleet-wide analytics dashboards."
+      ],
+      "techStack": [
+        "PyTorch",
+        "OpenVINO",
+        "ONNX",
+        "OpenCV"
+      ],
+      "tags": [
+        "Edge AI",
+        "Computer Vision",
+        "Model Optimization"
+      ]
+    },
+    {
+      "id": "incremental-object-detection",
+      "title": "Incremental Object Detection with Knowledge Distillation",
+      "domain": "Continual Learning",
+      "organization": "HCLTech R&D",
+      "role": "Computer Vision Engineer",
+      "period": "2023",
+      "problem": "Extend object detectors with new classes over time without catastrophic forgetting of previously trained classes.",
+      "approach": [
+        "Implemented a two-stage training strategy with feature-level and logit-level distillation from a frozen teacher model.",
+        "Compared against naive fine-tuning and rehearsal-based baselines on internal datasets and COCO-like splits."
+      ],
+      "impact": [
+        "Maintained ~85% mAP on old classes while adding new categories, close to full retraining performance.",
+        "Reduced retraining costs and made incremental updates more practical for evolving datasets."
+      ],
+      "techStack": [
+        "PyTorch",
+        "Detectron2",
+        "Knowledge Distillation"
+      ],
+      "tags": [
+        "Incremental Learning",
+        "Object Detection",
+        "Knowledge Distillation"
+      ]
+    },
+    {
+      "id": "vl-engineering-drawings",
+      "title": "Vision-Language Extraction from Engineering Drawings",
+      "domain": "Document AI & Vision-Language",
+      "organization": "HCLTech R&D",
+      "role": "CV & NLP Engineer",
+      "period": "2024",
+      "problem": "Manually understanding and transcribing dimensions, tolerances and metadata from complex engineering drawings is slow and error-prone.",
+      "approach": [
+        "Combined layout-aware OCR with detectors for arrows, callouts and key geometric elements in drawings.",
+        "Used a prompt-tuned Vision-Language Model to convert noisy raw text into normalized, structured JSON schemas."
+      ],
+      "impact": [
+        "Reduced manual QA and data-entry time by ~40% in sample workflows.",
+        "Created a modular pipeline that can adapt to new drawing templates with minimal retraining."
+      ],
+      "techStack": [
+        "OCR",
+        "Layout Analysis",
+        "Vision-Language Models",
+        "Python"
+      ],
+      "tags": [
+        "Vision-Language",
+        "Document AI",
+        "OCR"
+      ]
+    },
+    {
+      "id": "talking-head-lipsync",
+      "title": "Talking Head & Lip Sync Generation",
+      "domain": "Audio-Visual Generative Modeling",
+      "organization": "Academic / Personal",
+      "role": "Research Engineer",
+      "period": "2022 - 2023",
+      "problem": "Generate realistic lip-synced talking head videos conditioned on speech while maintaining identity consistency and smooth motion.",
+      "approach": [
+        "Implemented and compared GAN-based and transformer-based audio-visual alignment architectures.",
+        "Introduced sequence discriminators and feature matching losses to improve temporal consistency and reduce artifacts."
+      ],
+      "impact": [
+        "Improved lip-sync quality measured via LSE-C/LSE-D metrics.",
+        "Conducted small-scale user studies demonstrating more natural motion and lip alignment compared to baseline methods."
+      ],
+      "techStack": [
+        "PyTorch",
+        "GANs",
+        "Audio-Visual Models"
+      ],
+      "tags": [
+        "Generative Models",
+        "Lip Sync",
+        "Talking Head"
+      ]
+    }
+  ],
+  "achievements": [
+    "96.68th percentile in GATE 2021 (Computer Science).",
+    "Presented a Mixed Reality concept at INAE-SERB Youth Conclave 2022, IIT Jodhpur.",
+    "Teaching Assistant for Deep Learning, DL-Ops, and Security-oriented courses at IIT Jodhpur.",
+    "Managed IIT Jodhpur Student Wellbeing Committee web portal and actively guided students (2022).",
+    "Attended workshops on Ethical Hacking & Information Security (IISc Bangalore) and Google Android Development (IIT Bombay).",
+    "Built an active technical presence with 7K+ followers on LinkedIn, sharing insights on CV and GenAI."
+  ]
+}
