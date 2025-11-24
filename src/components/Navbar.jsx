@@ -46,7 +46,7 @@ export default function Navbar() {
             ))}
           </ul>
           <a
-            href="/Kalathur_Chenchu_Kishore_Kumar.pdf"
+            href={import.meta.env.BASE_URL + "Kalathur_Chenchu_Kishore_Kumar.pdf"}
             download
             className="rounded-full bg-sky-600 px-3 py-1.5 text-xs font-medium text-white shadow-sm hover:bg-sky-700"
           >
