@@ -64,7 +64,7 @@ export default function Hero() {
                 Let&apos;s Connect
               </a>
               <a
-                href="/Kalathur_Chenchu_Kishore_Kumar.pdf"
+                href={import.meta.env.BASE_URL + "Kalathur_Chenchu_Kishore_Kumar.pdf"}
                 download
                 className="rounded-full border border-sky-500 px-4 py-2 text-sky-600 hover:bg-sky-50"
               >
@@ -89,10 +89,11 @@ export default function Hero() {
                    2. Or changing the src below to your filename in public/
                 */}
                 <img
-                  src="/Kalathur_Chenchu_Kishore_Kumar.jpg"
-                  alt="Kishore Kumar portrait"
-                  className="h-full w-full object-top object-cover scale-110"
-                />
+  src={import.meta.env.BASE_URL + "Kalathur_Chenchu_Kishore_Kumar.jpg"}
+  alt="Kishore Kumar"
+  className="h-full w-full object-cover object-top scale-110"
+/>
+
               </div>
             </div>
           </motion.div>
