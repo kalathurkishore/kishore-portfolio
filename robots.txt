@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kalathurkishore.github.io/kishore-portfolio/sitemap.xml
