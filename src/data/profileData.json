@@ -72,6 +72,20 @@
         "Diffusion Models",
         "Python",
         "Docker"
+      ],
+      "publications": [
+        {
+          "title": "Curriculum Guided Massive Multi Agent System Solving For Robust Long Horizon Tasks",
+          "authors": [
+            "Indrajit Kar",
+            "Kalathur Chenchu Kishore Kumar"
+          ],
+          "venue": "arXiv Preprint",
+          "year": "2024",
+          "arxivId": "2512.08545",
+          "link": "https://arxiv.org/abs/2512.08545",
+          "summary": "Introduces a hierarchical multi-agent architecture distributing reasoning across a 64×64 grid of lightweight agents. Uses spatial curriculum learning with NLL-based confidence and Thompson Sampling for adaptive training, achieving improved stability and stronger long-range reasoning on benchmarks like Tower of Hanoi."
+        }
       ]
     },
     {
