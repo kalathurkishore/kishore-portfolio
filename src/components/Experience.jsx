@@ -64,41 +64,6 @@ export default function Experience() {
                       </span>
                     ))}
                   </div>
-                  {item.publications && item.publications.length > 0 && (
-                    <div className="mt-4 pt-3 border-t border-slate-100">
-                      <div className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-slate-500 mb-2">
-                        📄 Publications
-                      </div>
-                      {item.publications.map((pub) => (
-                        <div key={pub.arxivId} className="bg-gradient-to-r from-sky-50 to-indigo-50 rounded-xl p-3 border border-sky-100">
-                          <a
-                            href={pub.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-sm font-semibold text-sky-700 hover:text-sky-900 hover:underline transition-colors"
-                          >
-                            {pub.title}
-                          </a>
-                          <div className="text-xs text-slate-600 mt-1">
-                            {pub.authors.join(", ")} • {pub.venue} ({pub.year})
-                          </div>
-                          <p className="text-xs text-slate-700 mt-2 leading-relaxed">
-                            {pub.summary}
-                          </p>
-                          <div className="mt-2">
-                            <a
-                              href={pub.link}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1 text-[0.7rem] font-medium text-sky-600 hover:text-sky-800 transition-colors"
-                            >
-                              arXiv:{pub.arxivId} →
-                            </a>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
                 </motion.div>
               ))}
             </div>

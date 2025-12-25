@@ -72,20 +72,6 @@
         "Diffusion Models",
         "Python",
         "Docker"
-      ],
-      "publications": [
-        {
-          "title": "Curriculum Guided Massive Multi Agent System Solving For Robust Long Horizon Tasks",
-          "authors": [
-            "Indrajit Kar",
-            "Kalathur Chenchu Kishore Kumar"
-          ],
-          "venue": "arXiv Preprint",
-          "year": "2024",
-          "arxivId": "2512.08545",
-          "link": "https://arxiv.org/abs/2512.08545",
-          "summary": "Introduces a hierarchical multi-agent architecture distributing reasoning across a 64×64 grid of lightweight agents. Uses spatial curriculum learning with NLL-based confidence and Thompson Sampling for adaptive training, achieving improved stability and stronger long-range reasoning on benchmarks like Tower of Hanoi."
-        }
       ]
     },
     {
@@ -408,5 +394,33 @@
     "Managed IIT Jodhpur Student Wellbeing Committee web portal and actively guided students (2022).",
     "Attended workshops on Ethical Hacking & Information Security (IISc Bangalore) and Google Android Development (IIT Bombay).",
     "Built an active technical presence with 7K+ followers on LinkedIn, sharing insights on CV and GenAI."
+  ],
+  "publications": [
+    {
+      "title": "Curriculum Guided Massive Multi Agent System Solving For Robust Long Horizon Tasks",
+      "authors": [
+        "Indrajit Kar",
+        "Kalathur Chenchu Kishore Kumar"
+      ],
+      "venue": "arXiv Preprint",
+      "year": "2025",
+      "arxivId": "2512.08545",
+      "link": "https://arxiv.org/abs/2512.08545",
+      "abstract": "Large Language Models and multi-agent systems have shown promise in decomposing complex tasks, yet they struggle with long-horizon reasoning tasks and escalating computation cost. This work introduces a hierarchical multi-agent architecture that distributes reasoning across a 64×64 grid of lightweight agents, supported by a selective oracle. A spatial curriculum progressively expands the operational region of the grid, ensuring that agents master easier central tasks before tackling harder peripheral ones. To improve reliability, the system integrates Negative Log-Likelihood as a measure of confidence, allowing the curriculum to prioritize regions where agents are both accurate and well-calibrated. A Thompson Sampling curriculum manager adaptively chooses training zones based on competence and NLL-driven reward signals.",
+      "contributions": [
+        "Hierarchical multi-agent architecture distributing reasoning across a 64×64 grid of lightweight agents",
+        "Spatial curriculum learning that progressively expands operational regions from easier to harder tasks",
+        "NLL-based confidence measurement for prioritizing training on well-calibrated regions",
+        "Thompson Sampling curriculum manager for adaptive training zone selection",
+        "Demonstrated improved stability, reduced oracle usage, and stronger long-range reasoning on Tower of Hanoi benchmark"
+      ],
+      "tags": [
+        "Multi-Agent Systems",
+        "LLMs",
+        "Curriculum Learning",
+        "Long-Horizon Reasoning",
+        "Thompson Sampling"
+      ]
+    }
   ]
 }
