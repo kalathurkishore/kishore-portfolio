@@ -60,16 +60,22 @@
         "Designing and developing Generative AI applications that combine LLMs, Vision-Language Models, and diffusion models for enterprise use-cases such as document understanding, visual QA and workflow automation.",
         "Building agentic workflows using LangChain and custom tool abstractions, where LLM agents can orchestrate retrieval, reasoning, and action across internal APIs and knowledge bases.",
         "Prototyping RAG pipelines and evaluation harnesses to ensure reliability, latency guarantees, and domain-specific factual accuracy.",
-        "Collaborating closely with product and platform teams to productionize PoCs into scalable services with proper observability and safety checks."
+        "Collaborating closely with product and platform teams to productionize PoCs into scalable services with proper observability and safety checks.",
+        "Built an AI-Powered PowerPoint Generation System using LangGraph workflow orchestration and DALL-E 3 integration—enabling automated creation of branded corporate presentations with dynamic image generation, intelligent color theming, and advanced image processing (circular masks, opacity, color overlays). Reduced presentation creation time by ~95% and design costs by ~99%."
       ],
       "tech_stack": [
         "OpenAI / local LLMs",
         "LangChain",
+        "LangGraph",
         "LlamaIndex",
         "RAG",
         "Vector DBs",
         "Vision-Language Models",
         "Diffusion Models",
+        "DALL-E 3",
+        "Flask",
+        "python-pptx",
+        "Pillow",
         "Python",
         "Docker"
       ]
@@ -217,6 +223,48 @@
     ]
   },
   "projects": [
+    {
+      "id": "ai-pptx-dalle-generator",
+      "title": "AI-Powered PowerPoint Generation with DALL-E Integration",
+      "domain": "Enterprise GenAI Automation",
+      "organization": "Wipro",
+      "role": "Gen AI Developer",
+      "period": "2024",
+      "problem": "Manual corporate presentation creation is time-consuming (4-8 hours), expensive ($200-500/deck), and requires costly stock images ($50-200/image) while struggling to maintain consistent brand styling.",
+      "approach": [
+        "Developed LangGraph state machine orchestration for multi-step presentation generation with human-in-the-loop approval workflow.",
+        "Integrated Azure OpenAI DALL-E 3 for real-time AI image generation with intelligent prompt engineering for brand-aligned visual content.",
+        "Built automated color theming engine that dynamically applies company brand colors as gradient/solid overlays on AI-generated images with configurable transparency.",
+        "Created natural language background styling allowing users to specify styling in plain English (e.g., 'circular background on left with 30% opacity') parsed and applied by LLM.",
+        "Implemented custom HTML-to-PPTX rich text converter preserving bold, italic, underline, strikethrough, and code formatting.",
+        "Developed advanced image processing suite with 15+ effects: circular/rectangular masks, rounded corners, opacity, blur, brightness, contrast, saturation, grayscale, sepia, color inversion."
+      ],
+      "impact": [
+        "Reduced presentation creation time by ~95% (from 4-8 hours to 5-10 minutes).",
+        "Achieved ~99% reduction in design costs (~$0.50 API cost vs $200-500 traditional).",
+        "Reduced image licensing costs by ~97% ($0.04-0.08/image vs $50-200).",
+        "Enabled 100% automated brand consistency vs manual QC.",
+        "Projected enterprise ROI of $100,000-$300,000/year for 500 decks/year."
+      ],
+      "techStack": [
+        "Python",
+        "LangGraph",
+        "Flask",
+        "DALL-E 3",
+        "GPT-4.1",
+        "python-pptx",
+        "Pillow",
+        "NumPy",
+        "BeautifulSoup4",
+        "Jinja2"
+      ],
+      "tags": [
+        "GenAI",
+        "LangGraph",
+        "DALL-E",
+        "Automation"
+      ]
+    },
     {
       "id": "nerf-interior-reconstruction",
       "title": "NeRF-based 3D Interior Reconstruction",
