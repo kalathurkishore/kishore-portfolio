@@ -229,7 +229,7 @@
       "domain": "Enterprise GenAI Automation",
       "organization": "Wipro",
       "role": "Gen AI Developer",
-      "period": "2024",
+      "period": "2025",
       "problem": "Manual corporate presentation creation is time-consuming (4-8 hours), expensive ($200-500/deck), and requires costly stock images ($50-200/image) while struggling to maintain consistent brand styling.",
       "approach": [
         "Developed LangGraph state machine orchestration for multi-step presentation generation with human-in-the-loop approval workflow.",
