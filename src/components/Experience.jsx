@@ -3,149 +3,101 @@ import { motion } from "framer-motion";
 import profile from "../data/profileData.json";
 
 export default function Experience() {
-  const { experience, education, thesis } = profile;
+  const { experience } = profile;
 
   return (
-    <section id="resume-section" className="py-16 md:py-20 bg-slate-50">
-      <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <div className="mb-10 text-center relative">
-          <div className="section-title-big absolute -top-6 left-1/2 -translate-x-1/2 opacity-30 select-none">
-            Experience
-          </div>
-          <h2 className="section-title-main relative inline-block">
-            Experience & Education
+    <section id="experience-section" className="py-24 relative overflow-hidden">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        
+        {/* Section Header */}
+        <div className="mb-14 text-center">
+          <span className="section-tag mb-3">Industry Leadership</span>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+            Professional Experience
           </h2>
-          <p className="mt-2 text-sm text-slate-600 max-w-2xl mx-auto">
-            A quick overview of my journey across Computer Vision, Generative AI and data-driven optimization.
+          <p className="mt-3 text-sm sm:text-base text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            A track record of engineering contributions spanning autonomous perception at Valeo, enterprise GenAI at Wipro, edge vision R&D at HCLTech, and high-throughput data systems at TCS.
           </p>
         </div>
 
-        <div className="grid gap-10 md:grid-cols-[1.4fr,1fr]">
-          <div>
-            <h3 className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-              Professional Experience
-            </h3>
-            <div className="space-y-4">
-              {experience.map((item, idx) => (
-                <motion.div
-                  key={item.company + idx}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.4, delay: idx * 0.06 }}
-                  className="rounded-2xl bg-white p-4 shadow-sm border border-slate-100"
-                >
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
-                    <div>
-                      <div className="text-xs font-semibold text-sky-600">
-                        {item.period} • {item.location}
-                      </div>
-                      <h4 className="mt-1 text-sm md:text-base font-semibold text-slate-900">
-                        {item.role}
-                      </h4>
-                      <div className="text-xs text-slate-500">{item.company}</div>
-                    </div>
-                    <span className="rounded-full bg-sky-50 px-3 py-1 text-[0.7rem] text-sky-700">
-                      {item.focus}
-                    </span>
-                  </div>
-                  <ul className="mt-3 space-y-1.5 text-xs md:text-sm text-slate-700">
-                    {item.responsibilities.map((r) => (
-                      <li key={r}>• {r}</li>
-                    ))}
-                  </ul>
-                  <div className="mt-3 flex flex-wrap gap-1.5 text-[0.7rem] text-slate-600">
-                    {item.tech_stack.map((t) => (
-                      <span
-                        key={t}
-                        className="rounded-full bg-slate-50 px-2.5 py-1 border border-slate-200"
-                      >
-                        {t}
-                      </span>
-                    ))}
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </div>
+        {/* Experience Timeline */}
+        <div className="space-y-8 relative before:absolute before:inset-0 before:left-4 sm:before:left-1/2 before:-translate-x-px before:h-full before:w-0.5 before:bg-gradient-to-b before:from-sky-500 before:via-slate-300 dark:before:via-slate-800 before:to-transparent">
+          {experience.map((item, idx) => {
+            const isEven = idx % 2 === 0;
+            return (
+              <motion.div
+                key={item.company + idx}
+                initial={{ opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.5, delay: idx * 0.1 }}
+                className={`relative flex flex-col sm:flex-row items-start ${
+                  isEven ? "sm:flex-row-reverse" : ""
+                }`}
+              >
+                {/* Timeline node icon */}
+                <div className="absolute left-4 sm:left-1/2 -translate-x-1/2 flex items-center justify-center w-8 h-8 rounded-full bg-white dark:bg-slate-950 border-2 border-sky-600 dark:border-cyan-400 shadow-md shadow-sky-500/20 z-10 text-sky-600 dark:text-cyan-400 font-bold text-xs">
+                  {idx + 1}
+                </div>
 
-          <div className="space-y-6">
-            <div>
-              <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Education
-              </h3>
-              <div className="space-y-4">
-                {education.map((e, idx) => (
-                  <motion.div
-                    key={e.degree}
-                    initial={{ opacity: 0, y: 16 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    transition={{ duration: 0.4, delay: idx * 0.08 }}
-                    className="rounded-2xl bg-white p-4 shadow-sm border border-slate-100 text-sm"
-                  >
-                    <div className="text-xs font-semibold text-emerald-600">
-                      {e.period}
+                {/* Card Container */}
+                <div className="ml-12 sm:ml-0 sm:w-1/2 sm:px-8 w-full">
+                  <div className="glass-card glass-card-hover p-6 sm:p-7 border border-slate-200 dark:border-slate-800">
+                    
+                    {/* Header info */}
+                    <div className="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100 dark:border-slate-800/80">
+                      <div>
+                        <span className="text-[0.68rem] font-mono uppercase tracking-wider text-sky-600 dark:text-cyan-400 font-bold">
+                          {item.period} • {item.location}
+                        </span>
+                        <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white mt-1">
+                          {item.role}
+                        </h3>
+                        <div className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                          {item.company}
+                        </div>
+                      </div>
+                      <span className="inline-block px-3 py-1 rounded-full text-xs font-semibold bg-sky-50 dark:bg-cyan-950/60 border border-sky-200 dark:border-cyan-800/60 text-sky-700 dark:text-cyan-300">
+                        {item.badge}
+                      </span>
                     </div>
-                    <div className="mt-1 font-semibold text-slate-900">
-                      {e.degree}
+
+                    {/* Focus Summary */}
+                    <div className="mt-3 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400">
+                      <span className="text-slate-400 dark:text-slate-500 font-normal">Domain Focus: </span>
+                      {item.focus}
                     </div>
-                    <div className="text-xs text-slate-500">{e.institute}</div>
-                    <ul className="mt-2 space-y-1 text-xs text-slate-700">
-                      {e.details.map((d) => (
-                        <li key={d}>• {d}</li>
+
+                    {/* Responsibilities */}
+                    <ul className="mt-4 space-y-2 text-xs sm:text-sm text-slate-700 dark:text-slate-300">
+                      {item.responsibilities.map((resp, rIdx) => (
+                        <li key={rIdx} className="flex items-start gap-2.5">
+                          <span className="text-sky-600 dark:text-cyan-400 mt-1 flex-shrink-0 text-xs">▸</span>
+                          <span className="leading-relaxed">{resp}</span>
+                        </li>
                       ))}
                     </ul>
-                  </motion.div>
-                ))}
-              </div>
-            </div>
 
-            <div>
-              <h3 className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-                Masters Thesis
-              </h3>
-              <motion.div
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
-                transition={{ duration: 0.4 }}
-                className="rounded-2xl bg-white p-4 shadow-sm border border-slate-100 text-sm"
-              >
-                <div className="font-semibold text-slate-900">{thesis.title}</div>
-                <p className="mt-2 text-slate-700 text-xs md:text-sm">
-                  {thesis.summary}
-                </p>
-                <div className="mt-3">
-                  <div className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-slate-500">
-                    Problem
+                    {/* Tech Stack Chips */}
+                    <div className="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800/60 flex flex-wrap gap-1.5">
+                      {item.tech_stack.map((t) => (
+                        <span
+                          key={t}
+                          className="px-2.5 py-1 text-[0.7rem] font-mono rounded-md bg-slate-100 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300"
+                        >
+                          {t}
+                        </span>
+                      ))}
+                    </div>
+
                   </div>
-                  <p className="mt-1 text-xs text-slate-700">{thesis.problem}</p>
                 </div>
-                <div className="mt-3">
-                  <div className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-slate-500">
-                    Approach
-                  </div>
-                  <ul className="mt-1 space-y-1 text-xs text-slate-700">
-                    {thesis.approach.map((a) => (
-                      <li key={a}>• {a}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="mt-3">
-                  <div className="text-[0.7rem] font-semibold uppercase tracking-[0.16em] text-slate-500">
-                    Impact
-                  </div>
-                  <ul className="mt-1 space-y-1 text-xs text-slate-700">
-                    {thesis.impact.map((a) => (
-                      <li key={a}>• {a}</li>
-                    ))}
-                  </ul>
-                </div>
+
               </motion.div>
-            </div>
-          </div>
+            );
+          })}
         </div>
+
       </div>
     </section>
   );
